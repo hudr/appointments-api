@@ -39,13 +39,16 @@
     "uuid": "^8.3.0"
   },
   "devDependencies": {
-    "eslint": "^7.12.1",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.8",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "prettier": "^2.6.2"
   }
 }
