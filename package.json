@@ -7,6 +7,7 @@
   "license": "ISC",
   "main": "server.js",
   "scripts": {
+    "prepare": "husky install",
     "lint": "eslint .",
     "lint:fix": "eslint --fix --ext .js .",
     "dev": "nodemon ./src/server.js"

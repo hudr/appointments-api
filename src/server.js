@@ -18,5 +18,5 @@ app.use(errors())
 app.disable('x-powered-by')
 
 app.listen(process.env.APP_PORT, () => {
-    console.log(`Servidor iniciado na porta: ${process.env.APP_PORT}.`)
+  console.log(`Servidor iniciado na porta: ${process.env.APP_PORT}.`)
 })
