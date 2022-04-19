@@ -10,6 +10,7 @@
     "prepare": "husky install",
     "lint": "eslint .",
     "lint:fix": "eslint --fix --ext .js .",
+    "start": "node ./src/server.js",
     "dev": "nodemon ./src/server.js"
   },
   "husky": {
