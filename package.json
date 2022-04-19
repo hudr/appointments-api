@@ -18,7 +18,7 @@
     }
   },
   "lint-staged": {
-    "*.{js}": "yarn run lint:fix"
+    "*.js": "yarn run lint:fix"
   },
   "dependencies": {
     "aws-sdk": "^2.765.0",
