@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/hudsonra/api
-    - /bin/cp -r /home/hudsonra/repositories/appointments-api/* $DEPLOYPATH
+    - export DEPLOYPATH=/home/hudsonra/api/
+    - /bin/cp -R * $DEPLOYPATH
