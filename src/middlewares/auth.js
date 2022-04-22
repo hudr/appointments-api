@@ -1,17 +1,16 @@
+// eslint-disable-next-line no-unused-vars
 const jwt = require('jsonwebtoken')
 
 module.exports = (req, res, next) => {
-  const authHeader = req.headers.authorization
+  // Mantém verificação de token desativada para desenvolvimento
 
-  if (!authHeader)
-    return res.status(401).send({ error: 'JWT token is missing' })
-
-  const [, token] = authHeader.split(' ')
+  // const authHeader = req.headers.authorization
+  // if (!authHeader) return res.status(401).send({ error: 'JWT token is missing' })
+  // const [, token] = authHeader.split(' ')
 
   try {
-    const decoded = jwt.verify(token, process.env.APP_SECRET)
-
-    req.userId = decoded.id
+    // const decoded = jwt.verify(token, process.env.APP_SECRET)
+    // req.userId = decoded.id
 
     return next()
   } catch {
