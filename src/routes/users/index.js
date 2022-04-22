@@ -1,8 +1,8 @@
 const express = require('express')
 const usersRouter = express.Router()
 
-usersRouter.get('/helloworld', (req, res, next) => {
-  res.json({ message: 'Hello world buddy!' })
+usersRouter.get('/', (req, res, next) => {
+  res.json({ message: 'Hello world /users!' })
 })
 
 module.exports = usersRouter
