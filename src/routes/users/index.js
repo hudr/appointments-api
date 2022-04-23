@@ -20,6 +20,17 @@ usersRouter.post(
   UserController.store
 )
 
+usersRouter.post(
+  '/auth',
+  celebrate({
+    [Segments.BODY]: {
+      email: Joi.string().email().required(),
+      password: Joi.string().required(),
+    },
+  }),
+  UserController.authenticate
+)
+
 usersRouter.get('/', (req, res, next) => {
   res.status(200).send({
     message: 'Hello world!',
