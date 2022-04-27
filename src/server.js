@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const { errors } = require('celebrate')
 const routes = require('#routes')
+const logger = require('#config/logger')
 require('express-async-errors')
 require('dotenv/config')
 
@@ -18,5 +19,5 @@ app.use(errors())
 app.disable('x-powered-by')
 
 app.listen(process.env.APP_PORT || '80', () => {
-  console.log(`Servidor iniciado na porta: ${process.env.APP_PORT || '80'}.`)
+  logger.info(`Servidor iniciado na porta: ${process.env.APP_PORT || '80'}.`)
 })
