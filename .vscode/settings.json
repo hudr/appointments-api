@@ -1,0 +1,9 @@
+{
+    "eslint.validate": [
+        "javascript",
+    ],
+    "files.eol": "\n",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+    },
+}  
